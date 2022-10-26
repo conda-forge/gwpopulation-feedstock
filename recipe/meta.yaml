@@ -21,7 +21,6 @@ requirements:
   run:
     - astropy
     - bilby
-    - future
     - numpy
     - python >=3.8
     - scipy
