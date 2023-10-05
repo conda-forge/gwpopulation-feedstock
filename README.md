@@ -1,11 +1,11 @@
-About gwpopulation
-==================
+About gwpopulation-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwpopulation-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ColmTalbot/gwpopulation
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gwpopulation-feedstock/blob/main/LICENSE.txt)
 
 Summary: Unified population inference
 
