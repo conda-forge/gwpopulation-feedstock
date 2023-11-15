@@ -18,6 +18,9 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
+    - setuptools-scm
+    - wheel
   run:
     - astropy
     - bilby >=2.2.0
