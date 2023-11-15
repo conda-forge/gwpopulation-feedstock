@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -27,12 +27,18 @@ requirements:
     - cached_interpolate
 
 test:
-  imports:
-    - gwpopulation
-  commands:
-    - pip check
   requires:
     - pip
+    - pytest
+  source_files:
+    - priors/
+    - test/
+  commands:
+    # check metadata
+    - python -m pip check
+    - python -m pip show gwpopulation
+    # run test suite
+    - python -m pytest -ra test/
 
 about:
   home: https://github.com/ColmTalbot/gwpopulation
