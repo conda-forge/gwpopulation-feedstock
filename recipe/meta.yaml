@@ -33,6 +33,8 @@ test:
   requires:
     - pip
     - pytest
+    - jax
+    - numpyro
   source_files:
     - priors/
     - test/
