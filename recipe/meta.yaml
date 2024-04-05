@@ -1,5 +1,5 @@
 {% set name = "gwpopulation" %}
-{% set version = "0.10.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
-  sha256: 401cef5bf19fccc06e07195d12108dedf6f1cdf031dfb1eae602917a337f7d2a
+  sha256: d8ffc37bd9b9d3ee56d5e552b5cc75728c54eeef5f83124361c6c61fe1a79308
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -33,6 +33,8 @@ test:
   requires:
     - pip
     - pytest
+    - jax
+    - numpyro
   source_files:
     - priors/
     - test/
