@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - astropy
+    - wcosmo
     - bilby >=2.2.0
     - numpy
     - python >=3.8
@@ -31,6 +31,7 @@ requirements:
 
 test:
   requires:
+    - astropy
     - pip
     - pytest
     - jax
