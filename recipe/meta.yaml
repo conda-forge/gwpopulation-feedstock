@@ -1,5 +1,5 @@
 {% set name = "gwpopulation" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
-  sha256: fc997f8afd8d5356fbbb87611c2ce4db30d7a38ef87a48adca936dbee331bfde
+  sha256: 4c24186a80fb640cea0c00866dff3746119bd130be2e045e268c7a25da80be56
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - wcosmo
+    - wcosmo >=0.3.0
     - bilby >=2.2.0
     - numpy
     - python >=3.8
