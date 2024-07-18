@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
     - wheel
   run:
-    - wcosmo
+    - wcosmo >= 0.3.0
     - bilby >=2.2.0
     - numpy
     - python >=3.8
