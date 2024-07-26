@@ -1,5 +1,5 @@
 {% set name = "gwpopulation" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
-  sha256: 4c24186a80fb640cea0c00866dff3746119bd130be2e045e268c7a25da80be56
+  sha256: 9554fd237f52932b0fb341688acdeaa2bb44fea4f8454bfb31101f813f1b7e68
 
 build:
   noarch: python
@@ -25,9 +25,9 @@ requirements:
     - wcosmo >=0.3.0
     - bilby >=2.2.0
     - numpy
-    - python >=3.8
+    - python >=3.9
     - scipy
-    - cached_interpolate
+    - cached_interpolate >=0.3.0
 
 test:
   requires:
