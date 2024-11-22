@@ -37,7 +37,6 @@ test:
     - pip
     - pytest
     - jax
-    - unxt
     - numpyro
   source_files:
     - priors/
