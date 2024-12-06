@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -33,7 +33,7 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
-    - astropy
+    - astropy-base
     - pip
     - pytest
     - jax
