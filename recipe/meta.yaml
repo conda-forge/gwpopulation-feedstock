@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
   sha256: a9eb9fc3ebee4d326ff37452a6264957dedb25926abf1efcc53c3150d818a281
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -33,11 +33,12 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
-    - astropy
+    - astropy-base
     - pip
     - pytest
     - jax
     - numpyro
+    - scipy <1.15
   source_files:
     - priors/
     - test/
