@@ -1,5 +1,5 @@
 {% set name = "gwpopulation" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gwpopulation-{{ version }}.tar.gz
-  sha256: 3d6f0c9e6a1e85102892551dff501ad4cea00fd69de0290a1c6cf4e2eede53be
+  sha256: bb6f07c75e0495e22245262dff77d970bd77b841b96cabc302f74bd73cea168e
 
 build:
   noarch: python
