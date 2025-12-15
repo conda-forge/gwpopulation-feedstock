@@ -24,7 +24,7 @@ requirements:
     - wheel
   run:
     - wcosmo >=0.3.0
-    - bilby >=2.2.0
+    - bilby >=2.7.0
     - numpy
     - python >={{ python_min }}
     - scipy
@@ -38,7 +38,7 @@ test:
     - pytest
     - jax
     - numpyro
-    - scipy <1.15
+    - scipy
   source_files:
     - priors/
     - test/
